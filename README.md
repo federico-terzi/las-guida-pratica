@@ -8,15 +8,15 @@ Pur non essendo esaustiva in ogni aspetto, la guida parla della maggior
 parte delle tematiche affrontate in laboratorio, soffermandosi sui
 problemi più comuni.
 
-Contribuire alla guida
-======================
+Download: [ZIP](https://github.com/federico-terzi/las-guida-pratica/raw/master/las-guida-pratica.zip)
+
+## Contribuire alla guida
 
 Se ritieni di poter migliorare la guida o hai trovato un errore, visita
 la repository GitHub ed apri una *issue*, oppure inviami un messaggio.
 Ogni contributo è ben accetto :)
 
-Fonti {#fonti .unnumbered .unnumbered}
-=====
+### Fonti {#fonti .unnumbered .unnumbered}
 
 -   Molto materiale è tratto dalle slide del Prof. Marco Prandini che
     sono liberamente disponibili a questo indirizzo:
