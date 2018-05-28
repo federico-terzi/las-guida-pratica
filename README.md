@@ -9,6 +9,7 @@ parte delle tematiche affrontate in laboratorio, soffermandosi sui
 problemi più comuni.
 
 Download: [ZIP](https://github.com/federico-terzi/las-guida-pratica/raw/master/las-guida-pratica.zip)
+[PDF ( senza snippets )](https://github.com/federico-terzi/las-guida-pratica/raw/master/guida.pdf)
 
 ## Contribuire alla guida
 
@@ -16,7 +17,7 @@ Se ritieni di poter migliorare la guida o hai trovato un errore, visita
 la repository GitHub ed apri una *issue*, oppure inviami un messaggio.
 Ogni contributo è ben accetto :)
 
-### Fonti {#fonti .unnumbered .unnumbered}
+### Fonti
 
 -   Molto materiale è tratto dalle slide del Prof. Marco Prandini che
     sono liberamente disponibili a questo indirizzo:
