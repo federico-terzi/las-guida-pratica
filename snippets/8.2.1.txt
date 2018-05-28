@@ -1,0 +1,13 @@
+########################### CODE ###########################
+# Salva il crontab attuale in un file temporaneo
+crontab -l > tmpcron.txt
+
+# Aggiungo il nuovo comando in append al file
+echo "* * * * * /bin/echo ciao" >> tmpcron.txt
+
+# Aggiorna il crontab con il nuovo file
+crontab tmpcron.txt
+
+# Rimuovo il file temporaneo
+rm tmpcron.txt
+############################################################

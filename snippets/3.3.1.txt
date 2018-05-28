@@ -1,0 +1,13 @@
+########################### CODE ###########################
+# Restituisci il decimo carattere di ogni riga del file
+cut -c10 file.txt
+
+# Restituisci i caratteri dal quinto al decimo
+cut -c5-10 file.txt
+
+# Restiuisci i caratteri dall'inizio fino al 20esimo
+cut -c-20 file.txt
+
+# Resituisci i caratteri dal quinto in poi
+cut -c5- file.txt
+############################################################

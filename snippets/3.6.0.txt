@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Mostra solo le prime 2 righe del file
+head -2 file.txt
+
+# Mostra solo i primi 5 caratteri del file
+head -c 5 file.txt
+############################################################

@@ -1,0 +1,4 @@
+########################### CODE ###########################
+# Imposta la maschera in modo che i nuovi file abbiano permesso 775
+umask 0002
+############################################################

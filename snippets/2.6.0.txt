@@ -1,0 +1,14 @@
+########################### CODE ###########################
+du /path/directory       # Stampa la dimensione di ogni nodo dell'albero
+############################################################
+########################### CODE ###########################
+-h                  # Mostra le dimensioni in modo facilmente leggibile
+-s                  # Mostra il sommario ( totale ) della directory
+--max-depth         # Massima profondita' di esplorazione
+--exclude="*.txt"   # Esclude tutti i file che rispettano il pattern. 
+                    # NON supporta le regular expressions
+############################################################
+########################### CODE ###########################
+# Mostra i 10 file piu voluminosi nel direttorio corrente
+du | sort -nr | head -10
+############################################################

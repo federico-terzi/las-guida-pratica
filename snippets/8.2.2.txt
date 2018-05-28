@@ -1,0 +1,6 @@
+########################### CODE ###########################
+# Filtro il crontab con grep -v 
+# poi lo invio a crontab -
+# Che legge da standard input ed aggiorna cron
+crontab -l | grep -v "echo ciao" | crontab -
+############################################################

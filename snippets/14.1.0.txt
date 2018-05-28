@@ -1,0 +1,21 @@
+########################### CODE ###########################
+# Nel file: /etc/snmp/snmp.conf
+# Commentare la riga "mibs :" per avere i nomi simbolici
+############################################################
+########################### CODE ###########################
+# Nel file: /etc/snmp/snmpd.conf
+# Sistituire
+agentAddress udp:127.0.0.1:161
+# con
+agentAddress udp:161
+
+# Definire una vista che includa tutto il MIB
+view	all	included 	.1
+
+# Abilitare le community ad operare su quella vista
+rocommunity public default -V all
+rwcommunity supercom default -V all
+############################################################
+########################### CODE ###########################
+sudo systemctl restart snmpd
+############################################################

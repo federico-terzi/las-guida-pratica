@@ -1,0 +1,16 @@
+########################### CODE ###########################
+# Definizione di una entry per lo schema filesystem
+dn: fn=ciao,dc=labammsis
+objectClass: file
+objectClass: organization
+o: Laboratorio
+fn: ciao
+fs: 1234
+############################################################
+########################### CODE ###########################
+# Carica la entry dal file ldif e la inserisce nella directory
+ldapadd -x -c -D "cn=admin,dc=labammsis" -w admin -f file.ldif
+
+# E' anche possibile caricarla direttamente da standard input
+./mioscript.sh | ldapadd -x -c -D "cn=admin,dc=labammsis" -w admin
+############################################################

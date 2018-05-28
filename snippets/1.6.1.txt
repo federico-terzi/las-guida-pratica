@@ -1,0 +1,9 @@
+########################### CODE ###########################
+# Legge il file ciao.txt e ne inoltra il contenuto al comando less,
+# che ne mostra il contenuto in maniera progressiva
+cat ciao.txt | less
+############################################################
+########################### CODE ###########################
+# Inoltra sia lo standard output che lo standard error a less
+ls 2>&1 | less
+############################################################

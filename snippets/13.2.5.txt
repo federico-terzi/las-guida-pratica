@@ -1,0 +1,10 @@
+########################### CODE ###########################
+# Leggi i pacchetti con dimensione minore di 32 byte
+tcpdump less 32
+
+# Leggi i pacchetti con dimensione maggiore di 32 byte
+tcpdump greater 32
+
+# Si possono concatenare
+tcpdump less 32 and greater 20
+############################################################

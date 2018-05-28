@@ -1,0 +1,16 @@
+########################### CODE ###########################
+# Aggiungere al file: /etc/snmp/snmpd.conf
+proc <nome_processo> <max_numero> <min_numero>
+
+# Ad esempio, per monitorare il demone di log
+proc rsyslogd
+
+# Al massimo 4 istanze del processo
+proc rsyslogd 4
+
+# Almeno un istanza del processo, ma non piu' di 10
+proc rsyslogd 10 1
+############################################################
+########################### CODE ###########################
+sudo systemctl restart snmpd
+############################################################

@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Leggi i pacchetti in arrivo da 10.9.9.1
+tcpdump src 10.9.9.1
+
+# Leggi i pacchetti destinati a 10.9.9.1
+tcpdump dst 10.9.9.1
+############################################################

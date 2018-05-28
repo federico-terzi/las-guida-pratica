@@ -1,0 +1,30 @@
+########################### CODE ###########################
+# Visualizza l'entry e tutti i figli a partire da "dc=labammsis"
+ldapsearch -x -b "dc=labammsis"
+
+# Visualizza solo i figli di primo livello di "fn=home,dc=labammsis"
+ldapsearch -x -b "fn=home,dc=labammsis" -s one
+
+# Visualizza solo l'entry "fn=home,dc=labammsis"
+ldapsearch -x -b "fn=home,dc=labammsis" -s base
+############################################################
+########################### CODE ###########################
+# Legge uno specifico attributo di una entry ldap
+# ARGOMENTI: $1 Distinguished Name, $2 Nome attributo
+# RETURN: 0 se l'attributo e' stato trovato, 1 altrimenti
+function readldapattr () {
+        RES=$(ldapsearch -x -b "$1" -s base | egrep "^$2" \
+        | awk -F ": " '{ print $2 }')
+        if test -z "$RES" ; then
+                return 1
+        else
+                echo "$RES"
+                return 0
+        fi
+}
+
+# Esempio d'uso:
+ATTRVAL=$( readldapattr "ind=10.9.9.1,ind=10.1.1.1,dc=labammsis" "cnt" )
+echo "RETURN VALUE: $?"
+echo "ATTR VALUE: $ATTRVAL"
+############################################################

@@ -1,0 +1,25 @@
+########################### CODE ###########################
+# Esegue il comando echo quando lo script riceve il segnale USR1
+trap 'echo ciao' USR1
+############################################################
+########################### CODE ###########################
+#!/bin/bash
+
+# Definisco l'handler personalizzato
+function logging () {
+	case "$1" in
+		start)	echo started  ;;
+		stop)	echo stop	  ;;
+	esac
+}
+
+# Stoppa il logging quando viene ricevuto SIGUSR1
+trap 'logging stop' USR1
+logging start
+
+while :
+do
+	# Eseguo le varie elaborazioni
+	echo aspetto...
+done
+############################################################

@@ -1,0 +1,12 @@
+########################### CODE ###########################
+# Estrai il primo campo dalla riga, separato da uno spazio
+awk '{ print $1 }'
+
+# Estraggo il secondo campo, separato da una virgola
+awk -F "," '{ print $2 }'
+
+# Esempio di estrazione piu' complessa:
+# INPUT: campo1=pippo campo2=pluto
+# Vogliamo estrarre "pippo"
+awk -F "campo1=" '{ print $2 }' | awk -F "campo2=" '{ print $1 }'
+############################################################

@@ -1,0 +1,8 @@
+########################### CODE ###########################
+# Cambia la password dell'utente corrente
+passwd
+
+# Cambia la password di un utente specifico
+# NOTA: Necessari i permessi di root
+passwd <nomeutente>
+############################################################

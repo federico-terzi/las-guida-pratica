@@ -1,0 +1,8 @@
+########################### CODE ###########################
+# Visualizza le connessioni tcp nel sistema, visualizzando anche
+# i processi e gli utenti coinvolti
+ss -tpn
+
+# Con l'udp invece
+ss -upn
+############################################################

@@ -1,0 +1,19 @@
+########################### CODE ###########################
+# Aggiungo una regola in coda ( APPEND ) alla chain FORWARD
+iptables -A FORWARD <options> -j ACCEPT
+
+# Aggiungo una regola all'inizio della coda ( INSERT )
+iptables -I FORWARD <options> -j ACCEPT
+############################################################
+########################### CODE ###########################
+-i eth3       # Solo pacchetti in ingresso dall'interfaccia eth3
+-o eth3       # Solo pacchetti in uscita dall'interfaccia eth3
+-s <ip>       # Pacchetti che provengono dall'ip specificato
+-d <ip>       # Pacchetti destinati all'ip specificato
+-p tcp        # Solo pacchetti TCP
+# Specificando il protocollo tcp o udp, si possono selezionare le porte:
+--dport <prt> # Pacchetti con porta di destinazione == <prt>
+--sport <prt> # Pacchetti con porta di partenza == <prt>
+# Nel caso del protocollo TCP, anche lo stato della connessione:
+-m state --state NEW,ESTABLISHED
+############################################################

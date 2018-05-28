@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Leggi i pacchetti relativi al protocollo icmp
+tcpdump icmp
+
+# Leggi i pacchetti relativi a udp
+tcpdump udp
+############################################################

@@ -1,0 +1,6 @@
+########################### CODE ###########################
+# Cattura i pacchetti con dei flag tcp settati:
+
+tcpdump 'tcp[tcpflags] == tcp-syn'
+tcpdump 'tcp[tcpflags] == tcp-fin'
+############################################################

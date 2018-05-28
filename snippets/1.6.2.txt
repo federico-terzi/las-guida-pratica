@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Salvo il risultato del comando ls nel file ciao.txt
+ls > ciao.txt
+
+# Come nel caso precedente, ma in APPEND al file
+ls >> ciao.txt
+############################################################

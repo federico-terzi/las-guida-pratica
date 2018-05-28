@@ -1,0 +1,6 @@
+########################### CODE ###########################
+# Inserisce una regola che logga i pacchetti in transito nella chain
+# specificata con prefisso e livello di log specificati
+iptables -I <chain> <options> -j LOG --log-prefix=" prefisso " \
+         --log-level <livello_log>
+############################################################

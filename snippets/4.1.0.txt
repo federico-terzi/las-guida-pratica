@@ -1,0 +1,8 @@
+########################### CODE ###########################
+ax    # Visualizza tutti i processi, anche non propri
+u     # Mostra gli utenti proprietari del processo
+w     # Visualizza la riga di comando completa che
+      # ha originato il processo
+f     # Visualizza i rapporti di discendenza tra i processi
+-p    # Solo il processo con questi pid
+############################################################

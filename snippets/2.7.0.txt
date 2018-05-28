@@ -1,0 +1,16 @@
+########################### CODE ###########################
+# Trovare tutti i file che finiscono per .txt nella directory specificata 
+find /percorso/directory -name *.txt
+
+# Trovare tutti i file con dimensione superiore a 100k
+find -size +100k
+
+# Trovare tutti i file dell'utente las
+find -user las
+
+# Trovare tutti i file del gruppo las
+find -group las
+
+# Trovare tutti i direttori
+find -type d
+############################################################

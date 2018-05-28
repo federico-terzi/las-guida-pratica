@@ -1,0 +1,16 @@
+########################### CODE ###########################
+# NOTARE la presenza di /usr/bin/sudo
+# Restituisce le connessioni correntemente attive
+extend    activeconn /usr/bin/sudo /bin/ss -ntp
+############################################################
+########################### CODE ###########################
+# NOTA: Per editare il file conviene usare: sudo visudo
+# Permette all'utente snmp di eseguire il comando ss
+# senza digitare la password
+snmp	ALL=NOPASSWD:/bin/ss
+############################################################
+########################### CODE ###########################
+# Apre una shell come utente snmp
+# NOTA: Bisogna essere root per riuscirci
+su -s /bin/bash - snmp
+############################################################

@@ -1,0 +1,3 @@
+########################### CODE ###########################
+pwd  # Stampa in output il percorso assoluto del direttorio corrente
+############################################################

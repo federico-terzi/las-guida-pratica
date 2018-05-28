@@ -1,0 +1,12 @@
+########################### CODE ###########################
+# Da aggiungere al file /etc/snmp/snmpd.conf
+
+# Restituisce la data corrente
+extend currdate /bin/date
+
+# Restituisce il numero di processi in esecuzione sulla macchina
+extend-sh sshnum ps haux | wc -l
+############################################################
+########################### CODE ###########################
+sudo systemctl restart snmpd
+############################################################

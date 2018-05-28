@@ -1,0 +1,8 @@
+########################### CODE ###########################
+# Apre un prompt interattivo per inserire il comando
+# da chiudere con Ctrl+D
+at <time>
+
+# Da notare che per impostare il comando si puo' usare una pipe
+echo 'echo ciao' | at <time>
+############################################################

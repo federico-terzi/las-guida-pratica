@@ -1,0 +1,8 @@
+########################### CODE ###########################
+# Trovare tutti i file che possono essere eseguiti dal proprietario
+# e dal gruppo.
+find -type f -perm -110
+
+# Trovare tutti i file che hanno esattamente il permesso 110
+find -type f -perm /110
+############################################################

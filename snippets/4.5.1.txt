@@ -1,0 +1,4 @@
+########################### CODE ###########################
+# Invia un segnale di SIGUSR1 a tutti i processi che usano il file
+fuser -k -USR1 /path/to/file
+############################################################

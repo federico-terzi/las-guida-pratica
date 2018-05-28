@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Leggi i pacchetti relativi alla porta 1234
+tcpdump port 1234
+
+# Leggi i pacchetti in arrivo dalla porta 1234
+tcpdump src port 1234
+############################################################

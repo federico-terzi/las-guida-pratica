@@ -1,0 +1,20 @@
+########################### CODE ###########################
+auto eth0                   # Attiva con ifup -a
+iface eth0 inet static      # Ip statico definito manualmente
+                            # se usate dhcp invece che static,
+                            # fa in automatico.
+    address 192.168.56.203  
+    netmask 255.255.255.0
+    gateway 192.168.56.1
+    up /path/to/command     # Eseguito dopo la configurazione
+############################################################
+########################### CODE ###########################
+sudo systemctl stop networking
+sudo systemctl start networking
+############################################################
+########################### CODE ###########################
+ifup <nome_interfaccia>
+############################################################
+########################### CODE ###########################
+ip addr del <indirizzo>/<mask> dev <nome_interfaccia>
+############################################################

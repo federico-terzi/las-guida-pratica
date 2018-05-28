@@ -1,0 +1,26 @@
+########################### CODE ###########################
+#!/bin/bash
+aflag=
+bflag=
+bval=
+while getopts 'ab:' OPTION ; do
+	case $OPTION in
+		a)	aflag=1
+			;;
+		b)	bflag=1
+			bval="$OPTARG"
+			;;
+		?)	echo "Errore argomenti"
+			exit 2
+	esac
+done
+# Per ottenere gli argomenti, shifto via le opzioni
+shift $(($OPTIND - 1))
+
+if [ "$aflag" ] ; then
+	echo "Fai qualcosa con a"
+fi
+if [ "$bflag" ]	; then
+	echo "B valeva: $bval"
+fi
+############################################################

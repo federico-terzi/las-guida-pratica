@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Visualizza tutti gli oggetti del server 10.9.9.1
+snmpwalk -v 1 -c public 10.9.9.1 .1
+
+# Pue' essere utile utilizzare in piping il comando less
+snmpwalk -v 1 -c public 10.9.9.1 .1 | less
+############################################################

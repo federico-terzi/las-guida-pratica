@@ -1,0 +1,10 @@
+########################### CODE ###########################
+# Legge il valore di "sshnum" definito precedentemente
+snmpget -v 1 -c public <indirizzo_macchina> \
+ 'NET-SNMP-EXTEND-MIB::nsExtendOutputFull."sshnum"'
+
+# Per ottenere il valore puro si puo' utilizzare AWK
+snmpget -v 1 -c public <indirizzo_macchina> \
+ 'NET-SNMP-EXTEND-MIB::nsExtendOutputFull."sshnum"' | \
+awk -F 'STRING: ' '{ print $2 }' 
+############################################################

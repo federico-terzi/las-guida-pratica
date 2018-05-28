@@ -1,0 +1,13 @@
+########################### CODE ###########################
+# Sostituisci la prima occorrenza di pippo con pluto per ogni riga
+sed 's/pippo/pluto/' file.txt
+
+# Sostituisci TUTTE le occorrenze di pippo con pluto
+sed 's/pippo/pluto/g' file.txt
+
+# Sostituisci tutte le occorrenze di pippo con pluto CASE INSENSITIVE
+sed 's/pippo/pluto/gi' file.txt
+
+# Aggiungi all'inizio di ogni riga "INIZIO: "
+sed 's/^/INIZIO:/' file.txt
+############################################################

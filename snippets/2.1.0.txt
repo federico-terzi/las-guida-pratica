@@ -1,0 +1,17 @@
+########################### CODE ###########################
+ls # Elenca il contenuto della directory corrente
+############################################################
+########################### CODE ###########################
+-l # Abbina al nome le informazioni associate al file
+-h # Mostra la dimensione del file in versione piu leggibile
+-a # Mostra tutto ( includendo anche i file che iniziano con . )
+-A # Come -a, ma escludendo .. e .
+-R # Percorre ricorsivamente la gerarchia
+-r # Inverte l'ordine dell'elenco
+-t # Ordina i file in base all'ora di modifica ( dal piu recente )
+-i # Indica gli i-number dei file
+-F # Aggiunge alla fine del filename * agli eseguibili e / ai direttori
+-d # Mostra le informazioni di un direttorio senza listare contenuto.
+-X # Lista alfabeticamente in base all'estensione
+--full-time # Mostra la data di modifica completa (data, ora, sec, ecc)
+############################################################

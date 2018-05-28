@@ -1,0 +1,4 @@
+########################### CODE ###########################
+# Visualizza le configurazioni di iptables
+iptables -vnxL --line-numbers
+############################################################

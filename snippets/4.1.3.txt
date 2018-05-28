@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Visualizza i processi dell'utente pippo
+ps U pippo
+
+# Visualizza i processi di pippo e pluto
+ps U "pippo pluto"
+############################################################

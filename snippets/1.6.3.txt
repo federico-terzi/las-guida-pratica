@@ -1,0 +1,9 @@
+########################### CODE ###########################
+# Salvo il risultato del comando ls nel file ciao.txt
+# ed eventuali errori nel file errori.txt
+ls > ciao.txt 2> errori.txt
+############################################################
+########################### CODE ###########################
+# Salvo sia lo standard output che lo standard error nel file ciao.txt
+ls > ciao.txt 2>&1
+############################################################

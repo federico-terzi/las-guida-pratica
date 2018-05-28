@@ -1,0 +1,17 @@
+########################### CODE ###########################
+# Invia all'indirizzo 192.168.56.203 tutti i log di tipo local0 
+# con qualunque priorita'
+local0.*	@192.168.56.203
+
+# NOTA: I due campi sono separati da un TAB
+############################################################
+########################### CODE ###########################
+# Salva tutti i log di tipo local0 con qualunque priorita'
+local0.*	/var/log/attivita
+
+# NOTA: I due campi sono separati da un TAB
+############################################################
+########################### CODE ###########################
+$ModLoad imudp
+$UDPServerRun 514
+############################################################

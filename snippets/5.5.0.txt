@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Elenco i gruppi dell'utente corrente
+groups
+
+# Elenco i gruppi di un utente specifico
+groups <nomeutente>
+############################################################

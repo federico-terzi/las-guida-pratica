@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Salva la configurazione corrente sul file
+iptables-save > output.txt
+
+# Ripristina la configurazione salvata
+iptables-restore < output.txt
+############################################################

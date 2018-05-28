@@ -1,0 +1,10 @@
+########################### CODE ###########################
+# Visualizzazione configurazioni IP
+ip a
+
+# Assegnazione IP
+ip a add <address>/<mask> dev <interface>
+
+# Rimozione IP
+ip a del <address>/<mask> dev <interface>
+############################################################

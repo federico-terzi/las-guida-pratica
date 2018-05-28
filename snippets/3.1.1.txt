@@ -1,0 +1,10 @@
+########################### CODE ###########################
+# Stampo le righe di un file che contengono la parola "ciao"
+grep -e "ciao" filename.txt
+# Completamente equivalente a questo
+cat filename.txt | grep -e "ciao"
+
+# Utilizzando egrep e' possibile utilizzare le regex per la ricerca
+# Cerca tutte le righe che iniziano con "ciao"
+egrep -e "^ciao.*" filename.txt
+############################################################

@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Visualizza le informazioni relative al processo con PID=1234
+ps -p 1234
+
+# Visualizza le informazioni relative a piu processi
+ps -p 1234,1235
+############################################################

@@ -1,0 +1,14 @@
+########################### CODE ###########################
+-i any       # Ascolta da tutte le interfacce di rete
+-i eth0      # Ascolta sull'interfaccia eth0
+-l           # IMPORTANTE Line-buffered: Stampa un pacchetto appena 
+             # lo riceve senza bufferizzare. 
+-n           # IMPORTANTE Non risolvere gli hostname, lascia numerico
+-t           # Stampa il tempo in un formato human-friendly
+-c [N]       # Legge solo N pacchetti e poi termina
+-w output    # Scrive i pacchetti nel file PCAP di output
+-r file      # Legge i pacchetti dal file PCAP
+-p           # No promiscuous mode
+-A           # Stampa i pacchetti in ASCII
+-X           # Stampa i pacchetti in ASCII ed esadecimale
+############################################################

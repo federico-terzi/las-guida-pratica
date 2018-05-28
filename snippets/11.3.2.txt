@@ -1,0 +1,8 @@
+########################### CODE ###########################
+# Se non esiste, creo la cartella .ssh con i giusti permessi
+mkdir .ssh
+chmod 700 .ssh
+
+# Aggiungo alla coda del file .ssh/authorized_keys la chiave
+cat id_rsa.pub >> .ssh/authorized_keys
+############################################################

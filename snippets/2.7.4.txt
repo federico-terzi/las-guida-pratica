@@ -1,0 +1,14 @@
+########################### CODE ###########################
+# NOT: basta aggiungere ! prima dell'opzione.
+# Trovare tutti i file che non finiscono per .txt
+find ! -name *.txt
+
+# AND: basta inserire due comandi, sono automaticamente messi in AND.
+# Trovare tutti i file con dimensione superiore a 100k e 
+# che finiscono per .txt
+find -size +100k -name *.txt
+
+# OR: bisogna inserire l'opzione -o prima del secondo comando
+# Trovare tutti i file dell'utente las o che finiscono per .txt
+find -user las -o -name *.txt
+############################################################

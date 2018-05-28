@@ -1,0 +1,9 @@
+########################### CODE ###########################
+# Genero la coppia di chiavi
+# NOTA: premere invio ad ogni domanda
+ssh-keygen -t rsa -b 2048
+
+# Invio alla macchina remota la chiave pubblica
+# NOTA: Cambiare l'indirizzo di destinazione all'occorrenza
+scp .ssh/id_rsa.pub las@192.168.56.201:
+############################################################

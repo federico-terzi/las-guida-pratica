@@ -1,0 +1,4 @@
+########################### CODE ###########################
+# Logga il messaggio "ciao" nella facility local3 con priority info
+logger -p local3.info "ciao"
+############################################################

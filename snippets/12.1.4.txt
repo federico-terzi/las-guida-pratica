@@ -1,0 +1,23 @@
+########################### CODE ###########################
+# Elimina la regola numero 2 della chain INPUT
+iptables -D INPUT 2
+
+# Se ad esempio aggiungiamo una regola del tipo
+iptables -A INPUT -s 10.1.1.1 -j ACCEPT
+# Possiamo eliminarla con
+iptables -D INPUT -s 10.1.1.1 -j ACCEPT
+
+# E' inoltre possibile eleminare tutte le regole
+# di una chain ( FLUSH )
+iptables -F INPUT
+############################################################
+########################### CODE ###########################
+# ARGOMENTI: $1 A oppure D per aggiungere o togliere la regola.
+function gestisciRegola () {
+	iptables -$1 INPUT -s 10.1.1.1 -j ACCEPT
+}
+
+# Esempio d'uso
+gestisciRegola A   # Aggiungo la regola
+gestisciRegola D   # Elimino la regola
+############################################################

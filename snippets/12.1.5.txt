@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Imposto tutte le policy di default droppando i pacchetti che non 
+# soddisfano le regole
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+iptables -P FORWARD DROP
+############################################################

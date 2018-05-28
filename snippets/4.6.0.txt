@@ -1,0 +1,19 @@
+########################### CODE ###########################
+# Visualizza tutti i file aperti dal sistema
+lsof
+
+# Visualizza i file aperti da uno specifico user
+lsof -u <username>
+
+# Visualizza i file aperti da uno specifico processo
+lsof -p <PID>
+
+# Limitare l'output di lsof ad una sola directory
+lsof +D /path/to/dir
+
+# Listare tutti i file in base al tipo di connessione (tcp o udp)
+lsof -i tcp
+
+# IMPORTANTE: Visualizza le porte numeriche e non simboliche
+lsof -i tcp -P
+############################################################

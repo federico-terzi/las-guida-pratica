@@ -1,0 +1,15 @@
+########################### CODE ###########################
+# Stoppo il demone slapd
+sudo systemctl stop slapd
+
+# A questo punto navigo nella directory degli schemi ( come root )
+cd "/etc/ldap/slapd.d/cn=config/cn=schema/"
+
+# Dovrebbe essere presente un file: cn={n}filesystem.ldif
+# con n variabile in base allo schema
+# Elimino il file
+rm "cn={4}filesystem.ldif"
+
+# Riavvio il demone slapd
+sudo systemctl start slapd
+############################################################

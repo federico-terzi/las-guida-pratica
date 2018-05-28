@@ -1,0 +1,5 @@
+########################### CODE ###########################
+# Esegue il comando in background e lo
+# rende immune alla chiusura della shell
+nohup <command> &
+############################################################

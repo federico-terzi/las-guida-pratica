@@ -1,0 +1,14 @@
+########################### CODE ###########################
+# Crea la chain PIPPO
+iptables -N PIPPO
+
+# Inserisco una regola all'interno di PIPPO che faccia direttamente il
+# RETURN ( ovvero ritorni alla chain che l'ha invocata )
+iptables -I PIPPO -j RETURN
+
+# Elimino tutte le regole all'interno di PIPPO ( FLUSH )
+iptables -F PIPPO
+
+# Elimino la chain PIPPO
+iptables -X PIPPO
+############################################################

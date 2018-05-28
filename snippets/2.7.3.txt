@@ -1,0 +1,4 @@
+########################### CODE ###########################
+# Cercare tutti i file il cui nome finisce con .jpg, con una regex egrep
+find . -regextype posix-egrep -regex '.*\.jpg'
+############################################################

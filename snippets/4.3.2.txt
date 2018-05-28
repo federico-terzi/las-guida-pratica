@@ -1,0 +1,4 @@
+########################### CODE ###########################
+# Riporta il processo con il jobid specificato in foreground
+fg <job_id>
+############################################################

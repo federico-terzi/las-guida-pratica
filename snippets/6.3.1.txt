@@ -1,0 +1,8 @@
+########################### CODE ###########################
+# Visualizza la umask corrente
+umask
+
+# Per visualizzare i permessi a default correnti in maniera
+# piu' comprensibile, si puo' usare l'opzione -S
+umask -S
+############################################################

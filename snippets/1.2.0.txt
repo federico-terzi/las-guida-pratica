@@ -1,0 +1,5 @@
+########################### CODE ###########################
+# Stampo il primo argomento
+# Invoco il comando come: ./script.sh ciao
+echo "Il primo argomento e' $1"    # Output: Il primo argomento e' ciao
+############################################################

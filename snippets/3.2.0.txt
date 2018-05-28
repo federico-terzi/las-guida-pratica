@@ -1,0 +1,4 @@
+########################### CODE ###########################
+# Elenca le righe esattamente uguali a "ciao" nel file ciao.txt
+egrep '^ciao$' ciao.txt
+############################################################

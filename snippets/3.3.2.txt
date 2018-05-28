@@ -1,0 +1,9 @@
+########################### CODE ###########################
+cut -d<carattere_delimitatore> -f<elenco_campi>
+
+# Estraggo il primo campo, separati da una virgola
+cut -d, -f1
+
+# Estraggo il primo ed il terzo campo, separati da uno spazio
+cut -d' ' -f1,3
+############################################################

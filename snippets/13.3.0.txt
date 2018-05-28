@@ -1,0 +1,11 @@
+########################### CODE ###########################
+# Traffico destinato a 192.168.0.2 e non di tipo icmp
+tcpdump dst 192.168.0.2 and not icmp
+
+# Traffico da un host ma non su una specifica porta
+# Utile per filtrare connessione SSH
+tcpdump src 10.9.9.1 and not dst port 22
+
+# Con le parentesi si possono anche creare regole piu complesse
+tcpdump src 10.9.9.1 and (dst port 1234 or 22)
+############################################################

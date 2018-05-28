@@ -1,0 +1,4 @@
+########################### CODE ###########################
+# Visualizza le informazioni relative al processo chrome
+ps -C chrome
+############################################################

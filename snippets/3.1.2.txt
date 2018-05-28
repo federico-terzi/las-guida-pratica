@@ -1,0 +1,8 @@
+########################### CODE ###########################
+A=ciaone
+
+# Controllo se la variabile A contiene "ciao"
+if echo $A | grep -q "ciao" ; then
+echo A contiene ciao
+fi
+############################################################

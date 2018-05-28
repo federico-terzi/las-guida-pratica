@@ -1,0 +1,34 @@
+########################### CODE ###########################
+# Ottengo l'id del processo "rsyslogd"
+ID=$(snmpwalk -v 1 -c public 10.9.9.1 "UCD-SNMP-MIB::prNames" \
+	| grep rsyslogd | awk -F "prNames." '{ print $2}') \
+	| awk -F " = " '{ print $1 }'
+
+# Utilizzo l'id per ottenere il conteggio
+snmpget -v 1 -c public 10.9.9.1 "UCD-SNMP-MIB::prCount.$ID" \
+	| awk -F "INTEGER: " '{ print $2 }'
+############################################################
+########################### CODE ###########################
+# Visualizza tutti i valori di UDC-SNMP-MIB
+snmpwalk -v 1 -c public 10.9.9.1 .1 | grep UCD-SNMP-MIB
+############################################################
+########################### CODE ###########################
+# Ottiene il numero di istanze di un processo registrato tramite SNMP
+# ARGOMENTI: $1 nome processo, $2 indirizzo macchina
+function getProcessCount () {
+        # Ottengo l'id del processo
+        ID=$(snmpwalk -v 1 -c public $2 "UCD-SNMP-MIB::prNames" \
+                | grep "$1" | awk -F "prNames." '{ print $2}' \
+                | awk -F " = " '{ print $1 }' )
+
+        # Utilizzo l'id per ottenere il conteggio
+        NUM=$( snmpget -v 1 -c public $2 "UCD-SNMP-MIB::prCount.$ID" \
+                | awk -F "INTEGER: " '{ print $2 }' )
+        # Stampo il risultato
+        echo $NUM
+}
+
+# Esempio d'utilizzo:
+NUMERO=$( getProcessCount "rsyslogd" "10.9.9.1" )
+echo $NUMERO
+############################################################

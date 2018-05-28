@@ -1,0 +1,8 @@
+########################### CODE ###########################
+# Intercetta le connessioni SSH da Client a Router e le ridirige a Server
+iptables -t nat -A PREROUTING -i eth2 -s 10.1.1.1 -d 10.1.1.254 \
+         -p tcp --dport 22 -j DNAT --to-dest 10.9.9.1
+############################################################
+########################### CODE ###########################
+iptables -P FORWARD ACCEPT
+############################################################

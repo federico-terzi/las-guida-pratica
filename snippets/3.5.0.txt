@@ -1,0 +1,15 @@
+########################### CODE ###########################
+# Elimina i duplicati CONTIGUI
+uniq
+
+# Indica il numero di occorrenze per ogni duplicato
+uniq -c
+
+# Mostra SOLO i duplicati
+uniq -d
+############################################################
+########################### CODE ###########################
+	ciao
+	pippo
+	ciao
+############################################################

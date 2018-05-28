@@ -1,0 +1,10 @@
+########################### CODE ###########################
+cd                        # Torna nella home dell'utente corrente
+cd /path/della/directory  # Naviga nel path "/path/della/directory"
+cd ..                     # Naviga nel direttorio padre
+cd -                      # Torna nel direttorio precedente
+############################################################
+########################### CODE ###########################
+mkdir ciao     # Crea la directory
+cd !$          # Entra nella directory appena creata
+############################################################

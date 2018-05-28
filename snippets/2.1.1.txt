@@ -1,0 +1,5 @@
+########################### CODE ###########################
+ls --sort=extension  # Ordina in base all'estensione
+ls --sort=size       # Ordina in base alla dimensione del file
+ls --sort=time       # Ordina in base alla data di ultima modifica
+############################################################

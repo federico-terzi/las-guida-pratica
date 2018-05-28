@@ -1,0 +1,9 @@
+########################### CODE ###########################
+# Elenca tutti i file che contengono "ciao" analizzando
+# ricorsivamente il direttorio corrente.
+grep -r "ciao" .
+
+# Per restituire solo i nomi dei file senza le righe
+# che fanno match, usare l'opzione -l
+grep -r -l "ciao" .
+############################################################

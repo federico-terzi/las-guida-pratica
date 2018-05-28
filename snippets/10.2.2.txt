@@ -1,0 +1,13 @@
+########################### CODE ###########################
+# Visualizzazione di tutte le Routes
+ip r
+
+# Routing via Gateway
+ip r add <dst_net>/<mask> via <gw_addr>
+
+# Routing via Interfaccia di rete
+ip r add <dst_net>/<mask> dev <interface>
+
+# Rimozione
+ip a del <address>/<mask>
+############################################################

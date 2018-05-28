@@ -1,0 +1,26 @@
+########################### CODE ###########################
+# File differenze.ldif che modifica l'attributo fs dell'entry
+# definita in precedenza con dn: fn=ciao,dc=labammsis
+dn: fn=ciao,dc=labammsis
+changetype: modify
+replace: fs
+fs: 2345
+############################################################
+########################### CODE ###########################
+# Invia le modifiche
+ldapmodify -x -D "cn=admin,dc=labammsis" -w admin -f differenze.ldif
+############################################################
+########################### CODE ###########################
+# Modifica uno specifico attributo di una entry ldap
+# ARGOMENTI: $1 Distinguished Name, $2 Nome attributo, $3 Nuovo valore
+# RETURN: 0 se l'attributo e' stato modificato, 1 altrimenti
+function modldapattr () {
+        echo -e "dn: $1\nchangetype: modify\nreplace: $2\n$2: $3" \
+        | ldapmodify -x -D "cn=admin,dc=labammsis" -w admin
+        return $?
+}
+
+# Esempio d'uso:
+modldapattr "ind=10.9.9.1,ind=10.1.1.1,dc=labammsis" "cnt" "2"
+echo "RETURN VALUE: $?"
+############################################################

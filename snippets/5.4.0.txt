@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Visualizzo le info dell'utente corrente
+id
+
+# Visualizzo le info di un utente specifico
+id <nomeutente>
+############################################################

@@ -1,0 +1,4 @@
+########################### CODE ###########################
+# Visualizza il valore di una specifica entry
+snmpget -v 1 -c public 192.168.56.203 'UCD-SNMP-MIB:memAvailReal.0'
+############################################################

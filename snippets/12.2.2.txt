@@ -1,0 +1,9 @@
+########################### CODE ###########################
+# Espone le connessioni dal Client al Server come se venissero 
+# da Router stesso
+iptables -t nat -A POSTROUTING -o eth1 -s 10.1.1.1 -d 10.9.9.1 \
+         -j SNAT --to-source 10.9.9.254
+############################################################
+########################### CODE ###########################
+iptables -P FORWARD ACCEPT
+############################################################

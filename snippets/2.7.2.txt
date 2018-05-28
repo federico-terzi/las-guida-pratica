@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Stampare le informazioni di ogni file trovato tramite ls
+find . -exec ls -lh {} +
+
+# Un altro modo per realizzare questo meccanismo e' utilizzare xargs
+find . | xargs ls -lh
+############################################################

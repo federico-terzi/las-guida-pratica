@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Crea un hardlink
+ln /path/to/file /path/to/hardlink
+
+# Crea un link simbolico
+ln -s /path/to/file /path/to/link
+############################################################

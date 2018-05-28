@@ -1,0 +1,11 @@
+########################### CODE ###########################
+# Logga l'inizio di ogni connessione inoltrata da 10.1.1.1 a 10.9.9.1
+# con livello debug e prefisso NEWCON
+iptables -I FORWARD -i eth2 -s 10.1.1.1 -d 10.9.9.1 -p tcp \
+ --tcp-flags SYN SYN -j LOG --log-prefix " NEWCON " --log-level debug
+ 
+# Logga la fine di ogni connessione inoltrata da 10.1.1.1 a 10.9.9.1
+# con livello debug e prefisso ENDCON
+iptables -I FORWARD -i eth2 -s 10.1.1.1 -d 10.9.9.1 -p tcp \
+ --tcp-flags FIN FIN -j LOG --log-prefix " ENDCON " --log-level debug
+############################################################

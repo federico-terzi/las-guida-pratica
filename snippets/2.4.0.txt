@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# La sintassi del comando e' la seguente:
+printf <FORMATO> <ARGOMENTI>
+
+# Output: Nome: pippo, eta: 16
+printf "Nome: %s, eta: %d" pippo 16
+############################################################

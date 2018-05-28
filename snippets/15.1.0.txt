@@ -1,0 +1,28 @@
+########################### CODE ###########################
+dn: cn=filesystem,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: filesystem
+olcAttributeTypes: ( 1000.1.1.1 NAME ( 'fn' 'filename' )
+  DESC 'nome del file'
+  EQUALITY caseExactMatch
+  SUBSTR caseExactSubstringsMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+olcAttributeTypes: ( 1000.1.1.2 NAME ( 'fs' 'filesize' )
+  DESC 'dimensioni del file'
+  EQUALITY integerMatch
+  ORDERING integerOrderingMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.27 )
+olcObjectClasses: ( 1000.2.1.1 NAME 'dir'
+  DESC 'una directory'
+  MUST fn
+  MAY fs
+  AUXILIARY )
+olcObjectClasses: ( 1000.2.1.2 NAME 'file'
+  DESC 'un file'
+  MUST ( fn $ fs )
+  AUXILIARY )
+############################################################
+########################### CODE ###########################
+# Aggiungo lo schema definito nel file "filesystem.ldif"
+sudo ldapadd -Y EXTERNAL -H ldapi:/// -f filesystem.ldif 
+############################################################

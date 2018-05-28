@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Visualizza i PID dei processi che usano un file
+fuser /path/to/file
+
+# Visualizza i processi che usano un intero filesystem
+fuser -m /var
+############################################################

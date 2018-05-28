@@ -1,0 +1,15 @@
+########################### CODE ###########################
+# Cambia l'utente proprietario di un file
+chown <username> <nomefile>
+
+# Cambia il gruppo proprietario di un file
+# NOTA: Attenzione ad aggiungere :
+chown :<group> <nomefile>
+
+# Cambia l'utente ed il gruppo proprietario
+chown <username>:<group> <nomefile>
+
+# Cambia la proprieta di tutti i file contenuti nella directory
+# in maniera RICORSIVA
+chown -R <username>:<group> <nomedirectory>
+############################################################

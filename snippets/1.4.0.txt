@@ -1,0 +1,10 @@
+########################### CODE ###########################
+# Se $1 non e' specificato, setta la variabile a "pippo"
+NOME=${1:-"pippo"}
+
+# Se HOME non e' settata o e' nulla, la setta a /tmp
+cd ${HOME:=/tmp}
+
+# Stampa un errore ed esce se $2 non e' definito
+NOME=${2:?"Errore, due non definito"}
+############################################################

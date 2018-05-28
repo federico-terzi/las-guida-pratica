@@ -1,0 +1,13 @@
+########################### CODE ###########################
+# Diamo a tutti il permesso di lettura
+chmod a=r <nomefile>
+
+# Aggiungiamo il permesso di scrittura ed esecuzione al proprietario
+chmod u+wx <nomefile>
+
+# Rimuoviamo i permessi di scrittura al gruppo proprietario
+chmod g-w <nomefile>
+
+# E' anche possibile utilizzare il formato numerico
+chmod 0777 <nomefile>
+############################################################

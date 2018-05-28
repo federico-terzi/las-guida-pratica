@@ -1,0 +1,7 @@
+########################### CODE ###########################
+# Se non esiste gia', bisogna creare il gruppo
+addgroup <nomegruppo>
+
+# A questo punto possiamo creare un nuovo utente ed aggiungerlo al gruppo
+adduser --ingroup <nomegruppo> <nomeutente>
+############################################################

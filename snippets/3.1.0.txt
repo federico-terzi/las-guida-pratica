@@ -1,0 +1,12 @@
+########################### CODE ###########################
+-v        # Inverti il match ( escludi le righe che soddisfano il pattern )
+-c        # Conteggio del numero di righe che soddisfano il pattern
+-i        # Effettua la ricerca CASE-INSENSITIVE
+-w        # Cerca parole intere e NON sottostringhe
+-l        # Mostra solo i nomi dei file ( senza righe con match )
+-n        # Mostra i numeri di riga dei match
+-o        # Mostra solo la stringa che fa match, e non la riga intera
+-B <N>    # Stampa anche le N righe precedenti al match
+-A <N>    # Stampa anche le N righe successive al match
+--line-buffered   # Disabilita l'output buffer e stampa subito le righe
+############################################################
