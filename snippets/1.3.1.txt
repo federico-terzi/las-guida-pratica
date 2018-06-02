@@ -1,7 +1,7 @@
 ########################### CODE ###########################
 declare -a ARGS  # Dichiaro l'array
 
-# Riempo l'array con gli argomenti
+# Riempio l'array con gli argomenti
 ARGS=("$@")
 
 # Ciclo tra tutti gli elementi

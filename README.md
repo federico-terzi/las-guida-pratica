@@ -8,8 +8,7 @@ Pur non essendo esaustiva in ogni aspetto, la guida parla della maggior
 parte delle tematiche affrontate in laboratorio, soffermandosi sui
 problemi più comuni.
 
-Download: [ZIP](https://github.com/federico-terzi/las-guida-pratica/raw/master/las-guida-pratica.zip)
-[PDF ( senza snippets )](https://github.com/federico-terzi/las-guida-pratica/raw/master/guida.pdf)
+Download: [PDF](https://github.com/federico-terzi/las-guida-pratica/raw/master/guida.pdf)
 
 ## Contribuire alla guida
 
