@@ -1,1 +1,13 @@
-Il paragrafo non conteneva codice.
+########################### CODE ###########################
+dn: cn=count,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: count
+olcAttributeTypes: ( 1000.1.1.1 NAME ( 'indirizzo' )
+  DESC 'indirizzo IP di un host in forma di stringa'
+  EQUALITY caseExactMatch
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+olcObjectClasses: ( 1000.2.1.1 NAME 'client'
+  DESC 'un client'
+  MUST indirizzo
+  STRUCTURAL )
+############################################################

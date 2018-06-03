@@ -1,5 +1,16 @@
 ########################### CODE ###########################
-# Stampo il primo argomento
-# Invoco il comando come: ./script.sh ciao
-echo "Il primo argomento e' $1"    # Output: Il primo argomento e' ciao
+USER=pippo
+echo "Ciao $USER"   # Stampa: Ciao pippo
+echo 'Ciao $USER'   # Stampa: Ciao $USER
+echo "$(echo ciao)" # Stampa: ciao
+echo '$(echo ciao)' # Stampa: $(echo ciao)
+############################################################
+########################### CODE ###########################
+echo "ciao"'ciao'             # Stampa: ciaociao
+
+USER=pippo
+echo "ciao $USER"'ciao $USER' # Stampa: ciao pippociao $USER
+
+# Esempio un po' piu complesso:
+ssh "$1" "echo $2 $3 > "'/tmp/$(echo $SSH_CLIENT | cut -f1 -d" ")'
 ############################################################

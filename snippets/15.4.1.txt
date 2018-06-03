@@ -1,0 +1,6 @@
+########################### CODE ###########################
+# Definizione di una entry per lo schema count
+dn: indirizzo=123.123.123.123,dc=labammsis
+objectClass: client
+indirizzo: 123.123.123.123
+############################################################

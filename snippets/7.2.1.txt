@@ -5,7 +5,7 @@ local0.*	/var/log/attivita
 # Salva i log kernel da livello debug in su
 kern.debug	/var/log/attivita
 
-# Salve i log kernel con livello ESATTAMENTE UGUALE a debug
+# Salva i log kernel con livello ESATTAMENTE UGUALE a debug
 kern.=debug	/var/log/attivita
 
 # NOTA: I due campi sono separati da un TAB
